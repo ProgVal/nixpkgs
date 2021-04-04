@@ -38,8 +38,8 @@ stdenv.mkDerivation rec {
   patches = [
     ./patches/0001-use-shared-llvm.patch
     ./patches/0002-dont-build-llvm.patch
-    ./patches/0003-echo-newlines.patch
     ./patches/0004-increase-parallelism.patch
+    ./patches/0005-test.patch
   ];
 
   postPatch = ''

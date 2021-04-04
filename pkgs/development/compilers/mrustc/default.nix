@@ -4,9 +4,9 @@
 }:
 
 let
-  version = "0.9";
+  version = "0.10-dev";
   tag = "v${version}";
-  rev = "15773561e40ca5c8cffe0a618c544b6cfdc5ad7e";
+  rev = "75a0f59308bd6f903387774fbcb9ea9a65f89d0d";
 in
 
 stdenv.mkDerivation rec {
@@ -17,8 +17,8 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "thepowersgang";
     repo = "mrustc";
-    rev = tag;
-    sha256 = "194ny7vsks5ygiw7d8yxjmp1qwigd71ilchis6xjl6bb2sj97rd2";
+    rev = rev;
+    sha256 = "0csj509bypgbwfxzyy5ivh938xbdhp81waymvkgm4p9zg9yvifx3";
   };
 
   postPatch = ''
